@@ -1,0 +1,28 @@
+.our_partner_card {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+  margin: 0 auto;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    inset-inline-end: -7.5px;
+    height: 161px;
+    width: 1px;
+    background-color: #dddddd;
+  }
+
+  .asp-om {
+    @include p-bottom(180, 140);
+    transition: 0.4s;
+  }
+
+  &:hover {
+    .asp-om {
+      transform: scale(1.1);
+    }
+  }
+}

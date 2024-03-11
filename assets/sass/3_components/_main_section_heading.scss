@@ -1,0 +1,130 @@
+.section_main_title__ {
+  font-size: 2.2rem;
+  font-weight: 700;
+  width: fit-content;
+  color: $primaryColor;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid $borderColor;
+
+  // @include xs {
+  //   font-size: 1.8rem;
+  // }
+
+  &::after {
+    content: url(/assets/images/shapes/icon_logo.png);
+    position: absolute;
+    bottom: -23px;
+    inset-inline-start: 0;
+  }
+
+  .icon__ {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: rgba($primaryColor, 1);
+    }
+  }
+
+  &.none_margin {
+    margin-bottom: 0;
+  }
+
+  &.small_margin_bottom__ {
+    margin-bottom: 15px;
+  }
+}
+
+.section_sub_title__ {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $headingMainColor;
+  margin-top: 30px;
+
+  @include xs {
+    font-size: 1.2rem;
+  }
+}
+
+.section_head_wrapper {
+  margin-bottom: 37px;
+
+  @include sm {
+    margin-bottom: 25px;
+  }
+
+  @include xs {
+    margin-bottom: 20px;
+  }
+
+  &.center {
+    .section_main_title__,
+    .section_sub_title__ {
+      text-align: center;
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+    }
+  }
+
+  &.flex_display {
+    display: flex;
+    align-items: center;
+
+    &.justify_content_between {
+      justify-content: space-between;
+    }
+  }
+
+  &.white_color__ {
+    .section_main_title__,
+    .section_sub_title__ {
+      color: #fff;
+
+      // &::after,
+      // &::before {
+      //   background-color: #fff;
+      // }
+    }
+  }
+
+  &.small_size_dir_column {
+    @include sm {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+
+  &.small_size_center__ {
+    @include sm {
+      .page_main_title__,
+      .page_sub_title__ {
+        text-align: center;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+      }
+    }
+  }
+
+  &.none_margin__ {
+    margin: 0 !important;
+  }
+
+  &.small_margin {
+    margin-bottom: 40px;
+  }
+}
+
+.title_icon_wrapper__ {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

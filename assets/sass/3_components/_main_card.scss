@@ -1,0 +1,101 @@
+.main_card {
+  display: block;
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  transition: 0.5s;
+  box-shadow: 0 0 60px rgba(#acacac, 0.13);
+  margin: 0 auto;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .figure__ {
+    max-width: 250px;
+    transition: 0.4s;
+    @include p-bottom(229, 250);
+  }
+
+  .card_desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $headingSecondaryColor;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+    @include xs {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .parg {
+    font-size: 1.2rem;
+    color: $paragraphMainColor;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+  // &:hover {
+
+  //   .figure__ {
+  //     transition: 0.4s;
+  //     transform: scale(1.1);
+  //   }
+  // }
+}
+
+.price-info {
+  display: flex;
+  gap: 5px;
+}
+
+.price-active {
+  font-size: 1.8rem;
+  color: $primaryColor;
+  font-weight: 700;
+
+  span {
+    font-size: 1.2rem;
+  }
+}
+
+.price-canceled {
+  font-size: 1.2rem;
+  color: #cdcdcd;
+  font-weight: 400;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #cdcdcd;
+    transform: rotate(-24deg);
+    top: 7px;
+    left: 4px;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+
+.rating {
+  flex-shrink: 0;
+  .fa-star {
+    color: #d9d9d9;
+    font-size: 12px;
+  }
+  .star-color {
+    color: #efb104;
+  }
+}
