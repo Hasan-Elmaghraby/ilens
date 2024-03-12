@@ -116,7 +116,7 @@
   z-index: 3;
   gap: 0px;
   position: absolute;
-  top: 77%;
+  bottom: 10% !important;
 
   &.intro_swiper_pagination {
     position: absolute !important;
@@ -125,6 +125,16 @@
     width: fit-content;
     flex-wrap: wrap;
     max-width: 40%;
+  }
+
+  &.lenses_details {
+    &.swiper-pagination-clickable .swiper-pagination-bullet {
+      background-color: rgba($primaryColor, 0.33) !important;
+
+      &.swiper-pagination-bullet-active {
+        background-color: $primaryColor !important;
+      }
+    }
   }
 }
 

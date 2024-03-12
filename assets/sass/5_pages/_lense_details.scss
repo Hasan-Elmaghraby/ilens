@@ -1,0 +1,31 @@
+.lense_details {
+  background-color: $secondaryColor;
+
+  .figure__ {
+    margin: 0 auto;
+    max-width: 579px;
+    @include p-bottom(340, 579);
+  }
+
+  .with_row_gap {
+    row-gap: 15px;
+  }
+}
+.lense_details_desc {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #4d7785;
+    margin-bottom: 12px;
+  }
+  .parg {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #818181;
+    line-height: 28.8px;
+  }
+}

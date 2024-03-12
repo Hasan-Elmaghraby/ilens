@@ -1,12 +1,10 @@
 .page_main_title__ {
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
   width: fit-content;
   color: $primaryColor;
-  margin-bottom: 12px;
-  margin: 0;
-  margin-bottom: 15px;
-  
+  margin-bottom: 30px;
+
   @include xs {
     font-size: 1.8rem;
   }
@@ -17,7 +15,7 @@
   font-weight: 400;
   color: $headingMainColor;
   margin: 0;
-  
+
   @include xs {
     font-size: 1.4rem;
   }

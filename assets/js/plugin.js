@@ -133,11 +133,19 @@ function allSiteSwiperInit() {
     observeParents: true,
     spaceBetween: 15,
   };
+  const lense_details = {
+    autoplay: true,
+    className: ".lense_details",
+    observer: true,
+    observeParents: true,
+    spaceBetween: 15,
+  };
 
   swiperInit(heroSection);
   swiperInit(home_about_us);
   swiperInit(homeSections);
   swiperInit(home_our_partners);
+  swiperInit(lense_details);
 }
 
 function verificationCodeSeprate() {

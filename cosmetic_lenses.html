@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>ilense</title>
+
+  <link rel="Site Icon" href="assets/images/logo.png" />
+
+  <!-- ############################################################# -->
+  <!-- ################ Include Bootstrap Css Files ################ -->
+  <!-- #########################  Ar Pages ######################### -->
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <!-- #########################  En Pages ######################### -->
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <!-- ############################################################ -->
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+  <!-- Start Header Section -->
+
+  <header class="main_header__ flow_hidden">
+    <div class="top_header">
+      <div class="container">
+        <div class="top_header_content__">
+
+          <a class="header_logo__" href="index.html">
+            <figure class="figure__">
+              <img src="assets/images//logo.svg" alt=".." />
+            </figure>
+          </a>
+
+          <div class="header-contact-wrapper">
+
+            <a href="callto:966 0789 06541" target="_blank" class="header_contact_link__ link__">
+              <figure class="figure-block figure__ icon__">
+                <img class="img-om" src="assets/images/shapes/header_icons/call.svg" alt="..." />
+              </figure>
+              <div class="contact-desc">
+
+                <span class="title">+966 5891 0058</span>
+              </div>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=+96658910058" target="_blank"
+              class="header_contact_link__ link__">
+              <figure class="figure-block figure__ icon__">
+                <img class="img-om" src="assets/images/shapes/header_icons/whatsapp.svg" alt="..." />
+              </figure>
+              <div class="contact-desc">
+
+                <span class="title">+966 5891 0058</span>
+              </div>
+            </a>
+
+            <a href="mailto:info@alsaltanah.com" target="_blank" class="header_contact_link__ link__">
+              <figure class="figure-block figure__ icon__">
+                <img class="img-om" src="assets/images/shapes/header_icons/email.svg" alt="..." />
+              </figure>
+              <div class="contact-desc">
+
+                <span class="title">+966 5891 0058</span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="header_lang_wrapper dropdown__  ">
+            <a class="lang_link__ butt__" href="#!">
+              <figure class="figure__">
+                <img class="icon__" src="assets/images/shapes/header_icons/global.svg" alt="..." />
+              </figure>
+              العربية (ar)
+            </a>
+            <ul class="sub-menu__">
+              <li><a href="index.html">العربية</a></li>
+              <li><a href="index_en.html">English</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed_header__ ">
+      <div class="container">
+        <div class="header_content__">
+
+          <a class="header_logo__" href="index.html">
+            <figure class="figure__">
+              <img src="assets/images/fixed_logo.svg" alt=".." />
+            </figure>
+          </a>
+
+          <nav class="nav-om" id="navbar-menu-om">
+            <button class="close-button__"></button>
+
+            <figure class="figure__ nav_logo__">
+              <img src="assets/images/logo.svg" alt=".." />
+            </figure>
+
+            <ul class="nav-list-om list-unstyled">
+              <li class="header_list_item__ active">
+                <a href="index.html">الرئيسية</a>
+              </li>
+              <li class="header_list_item__">
+                <a href="about_us.html">من نحن</a>
+              </li>
+              <li class="header_list_item__">
+                <a href="our_partners.html">شركاؤنا</a>
+              </li>
+              <li class="header_list_item__">
+                <a href="sections.html"> الأقسام</a>
+              </li>
+              <li class="header_list_item__">
+                <a href="check_prouduct.html"> تحقق من المنتج</a>
+              </li>
+              <li class="header_list_item__">
+                <a href="connect_us.html"> تواصل معنا</a>
+              </li>
+            </ul>
+
+            <ul class="toolbar_options__ list-unstyled  ">
+              <li class="block__ lang__ dropdown__ ">
+                <a class="lang_link__ butt__" href="#!">
+                  <figure class="figure__">
+                    <img class="icon__" src="assets/images/shapes/header_icons/global.svg" alt="..." />
+                  </figure>
+                  العربية (AR)
+                </a>
+                <ul class="sub-menu__">
+                  <li><a href="index.html">العربية</a></li>
+                  <li><a href="index_en.html">English</a></li>
+                </ul>
+              </li>
+              <li class="block__ search  dropdown__ ">
+                <div class="input_search_wrapper">
+                  <input class="input_search" type="search" placeholder="ابحث عن ما تريد...">
+                </div>
+              </li>
+
+            </ul>
+
+          </nav>
+
+
+
+          <!-- start active menu button in small sizes  -->
+          <button class="menu_button__ button__" id="menu-butt-activ-om">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+              class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+              </path>
+            </svg>
+          </button>
+          <!-- end active menu button in small sizes  -->
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+
+  <!-- End Header Section -->
+
+
+
+
+  <!-- Start Cosmetic lenses -->
+
+  <section class="cosmetic_lenses default_page__">
+    <div class="container">
+
+
+      <div class="products_more_solid">
+
+        <h3 class="page_main_title__">
+          قسم العدسات التجميلية :
+        </h3>
+
+        <div class="row row_modify with_row_gap">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense1.jpg" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense2.png" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense1.jpg" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense2.png" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense1.jpg" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense2.png" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense1.jpg" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense2.png" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense1.jpg" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense2.png" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense1.jpg" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+
+            <a href="" class="main_card link__">
+              <figure class="figure__ loading-omd asp-om"><img class="img-om lazy-omd"
+                  data-src="assets/images/home_about_us/lense2.png" alt=""></figure>
+
+              <div class="card_desc">
+                <h4 class="title">عدسات تجميلية</h4>
+                <div class="rating ">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                  <i class="fa-solid fa-star star-color"></i>
+                </div>
+              </div>
+              <div class="card_desc">
+                <p class="parg">هذا النص هو مثال لنص</p>
+                <div class="price-info">
+                  <h3 class="price-canceled">200 <span>ر.س</span> </h3>
+                  <h3 class="price-active">170 <span>ر.س</span> </h3>
+                </div>
+              </div>
+
+            </a>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- End Cosmetic lesnes  -->
+
+
+
+  <!-- Start Footer Section -->
+
+  <footer class="footer_sec__">
+    <div class="container">
+
+      <div class="row row_modify with_row_gap footer_content__">
+
+        <div class="col-lg-3">
+          <figure class="footer_logo__ figure__">
+            <img src="./assets/images/logo.png" alt="" />
+          </figure>
+          <p class="footer_parg">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد</p>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-lg-7">
+              <h3 class="footer_head__">روابط هامة</h3>
+              <ul class="footer_list__ list-unstyled">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#"> خدماتنا</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+                <li><a href="#"> الشروط والأحكام</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-5">
+
+              <ul class="footer_socials__ list-unstyled">
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img class="img-om" src="./assets/images/socials/twitter.svg" alt=".." width="" height="" />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img class="img-om" src="./assets/images/socials/snap_chat.svg" alt=".." width="" height="" />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img class="img-om" src="./assets/images/socials/facebook.svg" alt=".." width="" height="" />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img class="img-om" src="./assets/images/socials/what's_up.svg" alt=".." width="" height="" />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img class="img-om" src="./assets/images/socials/instagram.svg" alt=".." width="" height="" />
+                  </a>
+                </li>
+              </ul>
+              <div class="copyrights_content___">
+                <img class="copyright_icon__" src="./assets/images/shapes/copyright.svg" alt=".." />
+
+                جميع الحقوق محفوظة
+                <a href="#!">
+                  <img class="copyright_logo__" src="./assets/images/shapes/copyrights.svg" alt=".." />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- End Footer Section -->
+
+  <!-- start js include  -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/plugin.js"></script>
+
+</body>
+
+</html>

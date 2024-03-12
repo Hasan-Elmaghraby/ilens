@@ -1,0 +1,73 @@
+.about_us_page {
+  background-color: $secondary2Color;
+}
+.page_about_us_wrapper {
+  display: flex;
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.about_us_desc {
+  padding: 50px 30px;
+  background-color: $primaryColor;
+  height: fit-content;
+  margin-top: 30px;
+
+  .title {
+    position: relative;
+    color: #1f3e63;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    // padding: 10px 30px;
+    // width: 412px;
+    padding: 10px 30px 10px 70px;
+    width: fit-content;
+    background-color: #fff;
+    height: 52px;
+    margin-inline-start: -34px;
+    border-inline-start: 4px solid $primaryColor;
+    // margin-bottom: 50px;
+  }
+}
+
+.images_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .image_wrapper {
+    border: 7px solid #fff;
+    height: fit-content;
+
+    .figure__ {
+      @include p-bottom(359, 527);
+    }
+  }
+
+  .big_image {
+    flex: 100%;
+    width: 527px;
+
+    @include sm {
+      width: auto;
+    }
+  }
+  .small_images {
+    flex: 100%;
+    display: flex;
+
+    .image_wrapper {
+      flex: 50%;
+
+      .figure__ {
+        @include p-bottom(218, 251);
+      }
+    }
+  }
+}
+
+.our_message_vision {
+  padding-top: 100px;
+}

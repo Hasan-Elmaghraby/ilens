@@ -34,6 +34,10 @@
     inset-inline-start: percentage(calc(70 / 580));
     padding-inline-end: percentage(calc(194 / 580));
     z-index: 1;
+
+    @include sm {
+      padding-inline-end: 0;
+    }
   }
 
   .title {
@@ -41,6 +45,11 @@
     font-weight: 800;
     color: $primaryColor;
     margin-bottom: 20px;
+
+    @include sm {
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
   }
 
   .parg {
