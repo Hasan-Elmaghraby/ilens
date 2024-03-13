@@ -136,6 +136,7 @@
     font-size: 1.4rem;
     background-color: $primaryColor;
     padding: 10px 130px;
+    font-weight: 700;
     margin: 0 auto;
 
     &:hover {
@@ -144,6 +145,12 @@
 
     @include xxs {
       padding: 10px 80px;
+    }
+
+    &.check_product {
+      height: 53px;
+      padding: 10px;
+      width: 100%;
     }
   }
 

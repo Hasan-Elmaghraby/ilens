@@ -1,0 +1,33 @@
+.congrats_wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+
+  .image-wrapper {
+    max-width: 266px;
+    margin: 0 auto;
+  }
+  .figure__ {
+    @include p-bottom(266, 266);
+  }
+
+  .title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #00d208;
+    margin: 25px 0 10px 0;
+  }
+
+  .parg {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $paragraphMainColor;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $primaryColor;
+    margin-top: 15px;
+  }
+}

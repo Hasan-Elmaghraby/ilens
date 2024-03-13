@@ -108,9 +108,9 @@ function allSiteSwiperInit() {
     observeParents: true,
   };
 
-  const home_about_us = {
+  const products_more_solid = {
     autoplay: true,
-    className: ".home_about_us",
+    className: ".products_more_solid",
     breakpoints: homeAboutusSwiperBreakNormalPoints,
     observer: true,
     observeParents: true,
@@ -142,7 +142,7 @@ function allSiteSwiperInit() {
   };
 
   swiperInit(heroSection);
-  swiperInit(home_about_us);
+  swiperInit(products_more_solid);
   swiperInit(homeSections);
   swiperInit(home_our_partners);
   swiperInit(lense_details);

@@ -1,0 +1,124 @@
+.connect_with_us_links_wrapper__ {
+  padding-bottom: 100px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border-top: 1px dotted #4d7785;
+    width: 70%;
+    z-index: -2;
+    top: 15px;
+    inset-inline-start: 15%;
+  }
+
+  @include sm {
+    padding-top: 40px;
+
+    &::before {
+      top: 55px;
+    }
+
+    .row_modify.with_row_gap {
+      row-gap: 40px;
+    }
+  }
+
+  @include xs {
+    &::before {
+      position: unset;
+    }
+  }
+
+  .block_link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 82px;
+    text-align: center;
+
+    @include xs {
+      row-gap: 45px;
+    }
+  }
+
+  .figure-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      @include circle(75px);
+      border: 1px solid #4d7785;
+      transition: 0.4s;
+      background-color: #fff;
+      z-index: -1;
+    }
+  }
+
+  .figure_link {
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    color: $paragraphMainColor;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    color: $primaryColor;
+    font-weight: 700;
+  }
+
+  .figure-block {
+    &:hover {
+      &::before {
+        background-color: $primaryColor;
+      }
+      .img-om {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  .block_link {
+    .contact-desc {
+      &:hover {
+        + .figure-block {
+          &::before {
+            background-color: $primaryColor;
+          }
+          .img-om {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.working_hours {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+  padding: 20px 30px;
+  background-color: rgba($primaryColor, 0.3);
+
+  @include xxs {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $primaryColor;
+  }
+}
