@@ -30,6 +30,15 @@
     margin-bottom: 0;
     gap: 45px;
 
+    &:hover {
+      li > a {
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
     @include md {
       gap: 30px;
     }
@@ -65,9 +74,9 @@
         cursor: pointer;
         transition: 0.5s;
 
-        &:hover {
-          color: #fff;
-        }
+        // &:hover {
+        //   opacity: 1;
+        // }
       }
 
       &.active {

@@ -24,6 +24,10 @@
   @include sm {
     padding: 20px;
     border-radius: 20px;
+
+    .with_row_gap {
+      row-gap: 0 !important;
+    }
   }
 }
 

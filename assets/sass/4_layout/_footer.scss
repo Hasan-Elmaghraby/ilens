@@ -186,6 +186,10 @@
   background-color: $primaryColor;
   border: 0;
 
+  @include md {
+    font-size: 14px;
+  }
+
   @include sm {
     padding: 20px 0;
     justify-content: center;

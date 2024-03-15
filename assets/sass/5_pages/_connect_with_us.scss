@@ -1,5 +1,5 @@
 .connect_with_us_links_wrapper__ {
-  padding-bottom: 100px;
+  padding-bottom: 83px;
   position: relative;
 
   &::before {
@@ -30,6 +30,10 @@
     }
   }
 
+  @include xxs {
+    padding-bottom: 25px;
+  }
+
   .block_link {
     display: flex;
     justify-content: center;
@@ -39,6 +43,9 @@
 
     @include xs {
       row-gap: 45px;
+    }
+    @include xxs {
+      row-gap: 25px;
     }
   }
 
@@ -56,6 +63,10 @@
       transition: 0.4s;
       background-color: #fff;
       z-index: -1;
+
+      @include xxs {
+        @include circle(60px);
+      }
     }
   }
 
@@ -107,18 +118,27 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   padding: 20px 30px;
   background-color: rgba($primaryColor, 0.3);
 
   @include xxs {
     gap: 15px;
     padding: 15px;
+    margin-bottom: 25px;
   }
 
   .title {
     font-size: 1.8rem;
     font-weight: 700;
     color: $primaryColor;
+  }
+}
+
+a {
+  &:hover {
+    + a::before {
+      background-color: red;
+    }
   }
 }

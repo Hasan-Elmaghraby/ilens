@@ -79,6 +79,8 @@
         cursor: pointer;
         transition: 0.5s;
         position: relative;
+        padding: 10px;
+        border-radius: 10px;
 
         &::after {
           content: url(../images/shapes/drop_down_menu_links_arrow.svg);
@@ -89,7 +91,7 @@
         }
 
         &:hover {
-          color: $secondaryColor !important;
+          color: $secondaryColor;
 
           &::before {
             filter: unset !important;
@@ -132,7 +134,7 @@
 
         &:hover {
           text-decoration: none;
-          color: $secondaryColor;
+          background-color: $primaryColor;
         }
       }
     }

@@ -146,6 +146,7 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 15px;
+    flex-direction: column;
 
     .block__ {
       &.lang__ {
