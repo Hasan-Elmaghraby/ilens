@@ -174,4 +174,17 @@
 
 .home_our_partners {
   background-color: rgba(#fff, 0.55);
+
+  .swiper-slide {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      inset-inline-end: -2%;
+      height: 161px;
+      width: 1px;
+      background-color: #dddddd;
+    }
+  }
 }

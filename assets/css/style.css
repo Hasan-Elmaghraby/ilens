@@ -4545,6 +4545,17 @@ html[dir=ltr] .rotate_arrow_en {
 .home_our_partners {
   background-color: rgba(255, 255, 255, 0.55);
 }
+.home_our_partners .swiper-slide::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  inset-inline-end: -2%;
+  height: 161px;
+  width: 1px;
+  background-color: #dddddd;
+}
 
 .registeration_page__ {
   padding-top: 70px;
