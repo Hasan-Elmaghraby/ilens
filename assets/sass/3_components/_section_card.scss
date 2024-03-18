@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   transition: $mainTransition;
+  text-align: start;
 
   &:hover {
     transform: translateY(-10px);
@@ -36,7 +37,7 @@
     z-index: 1;
 
     @include sm {
-      padding-inline-end: 0;
+      padding-inline-end: 12%;
     }
   }
 
@@ -50,11 +51,20 @@
       font-size: 2.2rem;
       margin-bottom: 5px;
     }
+
+    @include xxs {
+      font-size: 1.6rem;
+      margin-bottom: 0px;
+    }
   }
 
   .parg {
     font-size: 1.6rem;
     font-weight: 400;
     color: $primaryColor;
+
+    @include xxs {
+      font-size: 1.4rem;
+    }
   }
 }

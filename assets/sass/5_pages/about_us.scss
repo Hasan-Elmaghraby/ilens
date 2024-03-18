@@ -27,6 +27,10 @@
       height: 52px;
       margin-inline-start: -34px;
       border-inline-start: 4px solid $primaryColor;
+
+      @include dir {
+        padding: 10px 70px 10px 30px;
+      }
     }
   }
 }

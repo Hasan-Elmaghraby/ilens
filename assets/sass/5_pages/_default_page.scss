@@ -99,6 +99,10 @@
   color: #fff;
   margin-bottom: 15px;
   line-height: 30px;
+
+  @include dir {
+    line-height: 25px;
+  }
 }
 
 .default_parg {
@@ -107,4 +111,14 @@
   color: #cdcdcd;
   margin-bottom: 30px;
   line-height: 30px;
+
+  @include dir {
+    line-height: 25px;
+  }
+}
+
+.rotate_arrow_en {
+  @include dir {
+    transform: rotate(180deg);
+  }
 }

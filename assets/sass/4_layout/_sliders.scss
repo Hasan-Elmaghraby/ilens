@@ -105,6 +105,10 @@
 }
 .swiper-button-prev {
   right: 45% !important;
+
+  @include dir {
+    transform: rotateY(180deg);
+  }
 }
 
 // swiper-pagination

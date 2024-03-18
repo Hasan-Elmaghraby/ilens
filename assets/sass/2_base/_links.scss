@@ -125,6 +125,9 @@
     gap: 16px;
     position: relative;
 
+    @include sm {
+      gap: 7px;
+    }
     .contact-desc {
       flex-shrink: 0;
     }
@@ -140,6 +143,7 @@
     .figure__ {
       position: relative;
       z-index: 1;
+      flex-shrink: 0;
 
       .img-om {
         transition: 0.4s;

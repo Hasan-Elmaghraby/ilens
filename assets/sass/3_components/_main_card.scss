@@ -8,14 +8,21 @@
   margin: 0 auto;
   width: 100%;
 
+  @include xxs {
+    width: auto;
+  }
+
   &:hover {
     transform: translateY(-10px);
   }
 
   .figure__ {
-    max-width: 250px;
     transition: 0.4s;
     @include p-bottom(229, 250);
+
+    @include xxs {
+      min-width: 250px;
+    }
   }
 
   .card_desc {

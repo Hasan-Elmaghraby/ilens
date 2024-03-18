@@ -82,6 +82,11 @@
     &.justify_content_between {
       justify-content: space-between;
     }
+
+    @include xxs {
+      flex-direction: column;
+      row-gap: 30px;
+    }
   }
 
   &.white_color__ {

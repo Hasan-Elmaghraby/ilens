@@ -76,6 +76,10 @@
   .hero_link__ {
     display: flex;
   }
+
+  .main_link {
+    min-width: 169px;
+  }
 }
 
 .home_about_us,
@@ -94,7 +98,7 @@
     position: absolute;
     width: 527px;
     bottom: 35px;
-    left: calc(-527px / 2);
+    inset-inline-end: calc(-527px / 2);
     border: 7px solid #fff;
 
     .figure__ {
@@ -106,7 +110,7 @@
   .play_video {
     position: absolute;
     background-color: $primaryColor;
-    left: 0;
+    inset-inline-end: 0;
     bottom: 0;
     padding: 25px 25px 31px;
 
@@ -129,6 +133,10 @@
       }
     }
   }
+
+  .main_link {
+    min-width: 169px;
+  }
 }
 
 @include sm {
@@ -150,6 +158,8 @@
 }
 
 .home_about_us {
+  text-align: start;
+
   .title-products {
     margin-bottom: 30px;
     font-size: 1.6rem;

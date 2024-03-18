@@ -110,8 +110,13 @@
 
     @include sm {
       display: flex;
-      flex-direction: column;
       row-gap: 10px;
+      column-gap: 20px;
+    }
+
+    @include xxs {
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .figure-block {
@@ -134,8 +139,11 @@
     position: absolute;
     content: url(../images/shapes/header_icons/search.svg);
     top: 55%;
-    left: 18px;
+    inset-inline-end: 18px;
     transform: translateY(-50%);
+    @include dir {
+      transform: translateY(-50%) rotate(90deg);
+    }
   }
 
   @include sm {
@@ -160,6 +168,11 @@
 
   @include md {
     width: 280px;
+  }
+  @include dir {
+    @include md {
+      width: 250px;
+    }
   }
 
   &::-webkit-outer-spin-button,

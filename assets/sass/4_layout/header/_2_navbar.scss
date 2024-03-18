@@ -17,7 +17,7 @@
   }
 
   @include dir {
-    gap: 20px;
+    gap: 30px;
   }
 
   .close-button__,
@@ -44,7 +44,7 @@
     }
 
     @include dir {
-      gap: 10px;
+      gap: 20px;
     }
 
     &.small_size_only__ {

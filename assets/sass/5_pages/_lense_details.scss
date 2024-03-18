@@ -1,4 +1,5 @@
-.lense_details {
+.lense_details,
+.cosmetic_lenses {
   background-color: $secondaryColor;
 
   .figure__ {
@@ -27,5 +28,9 @@
     font-weight: 300;
     color: #818181;
     line-height: 28.8px;
+
+    @include dir {
+      line-height: 22px;
+    }
   }
 }

@@ -38,10 +38,11 @@
 }
 
 .footer_head__ {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 15px;
+  text-align: start;
 }
 
 .footer_list__ {
@@ -76,16 +77,12 @@
     width: fit-content;
     position: relative;
 
-    @include xxs {
-      font-size: 9px;
-    }
-
     @include dir {
       font-size: 12px;
 
-      @include xxs {
-        font-size: 7px;
-      }
+      // @include xxs {
+      //   font-size: 7px;
+      // }
     }
 
     img {

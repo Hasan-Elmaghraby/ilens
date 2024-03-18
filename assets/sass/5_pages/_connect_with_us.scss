@@ -134,11 +134,3 @@
     color: $primaryColor;
   }
 }
-
-a {
-  &:hover {
-    + a::before {
-      background-color: red;
-    }
-  }
-}
